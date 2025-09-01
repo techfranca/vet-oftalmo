@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Eye, Clock, Phone, CheckCircle, AlertTriangle, Droplets, Search } from "lucide-react"
@@ -22,7 +21,7 @@ export default function VetOftalmologiaPage() {
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center px-4">
             {/* Text Content - Left Column (First on Mobile) */}
-            <div className="order-1 md:order-1">
+            <div className="order-1 md:order-1 text-center md:text-left">
               <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl text-balance break-words">
                 <span style={{ color: "#CAB272" }}>Olhos vermelhos</span>,{" "}
                 <span style={{ color: "#CAB272" }}>secreção</span> ou seu pet esbarra nos móveis?
@@ -33,26 +32,20 @@ export default function VetOftalmologiaPage() {
                 acompanhamento para salvar a visão do seu melhor amigo.
               </p>
 
-              <Button
-                size="lg"
-                className="mb-4 h-14 sm:h-16 w-full px-3 sm:px-4 text-sm sm:text-base font-bold text-white md:w-auto md:px-12"
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center mb-4 h-14 sm:h-16 w-full px-3 sm:px-4 text-sm sm:text-base font-bold text-white md:w-auto md:px-12 rounded-md transition-colors hover:opacity-90"
                 style={{ backgroundColor: "#CAB272" }}
-                asChild
               >
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center"
-                >
-                  <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-                  <span className="break-words text-center leading-tight">
-                    Agendar consulta imediata no WhatsApp 🐶🐱
-                  </span>
-                </a>
-              </Button>
+                <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                <span className="break-words text-center leading-tight">
+                  Agendar consulta imediata no WhatsApp 🐶🐱
+                </span>
+              </a>
 
-              <div className="flex items-start space-x-2 sm:space-x-3 text-sm">
+              <div className="flex items-start space-x-2 sm:space-x-3 text-sm justify-center md:justify-start">
                 <span className="text-orange-500 text-base sm:text-lg flex-shrink-0 mt-0.5">⚠️</span>
                 <p className="text-orange-600 font-medium leading-relaxed break-words text-sm sm:text-base">
                   Problemas oculares podem evoluir rápido. Agende agora para evitar riscos à visão do seu pet.
@@ -61,7 +54,7 @@ export default function VetOftalmologiaPage() {
             </div>
 
             {/* Image - Right Column (Second on Mobile) */}
-            <div className="order-2 md:order-2">
+            <div className="order-2 md:order-2 flex justify-center">
               <div className="relative overflow-hidden rounded-lg shadow-lg w-full mx-auto max-w-md md:max-w-none">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/carol3.jpg-8kaaz7pDUH2cGPH4oPbCq6DpNdhHPN.jpeg"
@@ -116,12 +109,15 @@ export default function VetOftalmologiaPage() {
               <h3 className="mb-2 text-lg sm:text-xl font-bold text-destructive leading-tight">
                 Sem o tratamento correto, esses problemas podem evoluir para dor intensa e até cegueira irreversível.
               </h3>
-              <Button variant="destructive" className="mt-3 sm:mt-4 w-full sm:w-auto" asChild>
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Falar no WhatsApp
-                </a>
-              </Button>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center mt-3 sm:mt-4 w-full sm:w-auto px-4 py-2 bg-destructive text-destructive-foreground rounded-md font-medium transition-colors hover:bg-destructive/90"
+              >
+                <Phone className="mr-2 h-4 w-4" />
+                Falar no WhatsApp
+              </a>
             </CardContent>
           </Card>
         </div>
@@ -218,17 +214,16 @@ export default function VetOftalmologiaPage() {
                 ))}
               </div>
 
-              <Button
-                size="lg"
-                className="mt-6 sm:mt-8 text-white w-full sm:w-auto"
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center mt-6 sm:mt-8 text-white w-full sm:w-auto px-6 py-3 rounded-md font-medium transition-colors hover:opacity-90"
                 style={{ backgroundColor: "#395757" }}
-                asChild
               >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <Phone className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
-                  Agendar no WhatsApp
-                </a>
-              </Button>
+                <Phone className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
+                Agendar no WhatsApp
+              </a>
             </div>
 
             <div className="order-2 md:order-2">
@@ -421,17 +416,16 @@ export default function VetOftalmologiaPage() {
           </Accordion>
 
           <div className="mt-6 sm:mt-8 text-center">
-            <Button
-              size="lg"
-              className="text-white w-full sm:w-auto h-12 sm:h-auto"
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center text-white w-full sm:w-auto h-12 sm:h-auto px-6 py-3 rounded-md font-medium transition-colors hover:opacity-90"
               style={{ backgroundColor: "#395757" }}
-              asChild
             >
-              <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
-                Agende agora pelo WhatsApp
-              </a>
-            </Button>
+              <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
+              Agende agora pelo WhatsApp
+            </a>
           </div>
         </div>
       </section>
@@ -452,17 +446,16 @@ export default function VetOftalmologiaPage() {
             A visão do seu pet é preciosa e irreversível quando perdida. Agende agora mesmo uma consulta especializada.
           </p>
 
-          <Button
-            size="lg"
-            className="h-14 sm:h-16 px-6 sm:px-8 text-base sm:text-lg font-bold text-white border-white/30 w-full sm:w-auto"
+          <a
+            href={whatsappUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center h-14 sm:h-16 px-6 sm:px-8 text-base sm:text-lg font-bold text-white border border-white/30 w-full sm:w-auto rounded-md transition-colors hover:opacity-90"
             style={{ backgroundColor: "#CAB272", color: "white" }}
-            asChild
           >
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Phone className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
-              Agendar agora pelo WhatsApp
-            </a>
-          </Button>
+            <Phone className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
+            Agendar agora pelo WhatsApp
+          </a>
         </div>
       </section>
 
@@ -481,16 +474,16 @@ export default function VetOftalmologiaPage() {
                 <p>📱 WhatsApp: (21) 99812-2301</p>
               </div>
 
-              <Button
-                className="mt-3 sm:mt-4 text-white w-full sm:w-auto"
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center mt-3 sm:mt-4 text-white w-full sm:w-auto px-4 py-2 rounded-md font-medium transition-colors hover:opacity-90"
                 style={{ backgroundColor: "#CAB272" }}
-                asChild
               >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Agendar pelo WhatsApp
-                </a>
-              </Button>
+                <Phone className="mr-2 h-4 w-4" />
+                Agendar pelo WhatsApp
+              </a>
             </div>
 
             {/* Google Maps */}
