@@ -41,7 +41,7 @@ export default function VetOftalmologiaPage() {
               >
                 <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
                 <span className="break-words text-center leading-tight">
-                  Agendar consulta imediata no WhatsApp 🐶🐱
+                  Agendar consulta imediata no WhatsApp 🐶
                 </span>
               </a>
 
