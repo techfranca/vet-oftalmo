@@ -8,34 +8,34 @@ export default function VetOftalmologiaPage() {
   const whatsappUrl = `https://wa.me/${whatsappNumber}`
 
   return (
-    <div className="w-full bg-background">
+    <div className="w-full bg-background overflow-x-hidden">
       {/* Header with doctor's name */}
       <header className="py-3 sm:py-4" style={{ backgroundColor: "#395757" }}>
-        <div className="px-4 mx-auto max-w-4xl text-center">
-          <h1 className="text-xl font-bold text-white sm:text-2xl md:text-3xl">Oftalmologia Veterinária</h1>
-          <p className="text-sm text-white/90 sm:text-base">Dra. Carolina Neumann</p>
+        <div className="mx-auto max-w-4xl text-center">
+          <h1 className="text-xl font-bold text-white sm:text-2xl md:text-3xl px-4">Oftalmologia Veterinária</h1>
+          <p className="text-sm text-white/90 sm:text-base px-4">Dra. Carolina Neumann</p>
         </div>
       </header>
 
       {/* Hero Section with two-column layout and mobile-first approach */}
       <section className="relative py-8 sm:py-12 md:py-20" style={{ backgroundColor: "#f0f4f4" }}>
-        <div className="px-4 mx-auto max-w-6xl">
-          <div className="grid gap-8 sm:gap-8 md:grid-cols-2 md:items-center">
+        <div className="mx-auto max-w-6xl">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center px-4">
             {/* Text Content - Left Column (First on Mobile) */}
             <div className="order-1 md:order-1">
-              <h1 className="mb-6 text-2xl sm:text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl text-balance break-words">
+              <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl text-balance break-words">
                 <span style={{ color: "#CAB272" }}>Olhos vermelhos</span>,{" "}
                 <span style={{ color: "#CAB272" }}>secreção</span> ou seu pet esbarra nos móveis?
               </h1>
 
-              <p className="mb-8 text-lg sm:text-lg text-gray-700 md:text-xl text-pretty leading-relaxed break-words">
+              <p className="mb-6 sm:mb-8 text-base sm:text-lg text-gray-700 md:text-xl text-pretty leading-relaxed break-words">
                 Consulta com especialista em Oftalmologia Veterinária. Diagnóstico rápido, tratamento imediato e
                 acompanhamento para salvar a visão do seu melhor amigo.
               </p>
 
               <Button
                 size="lg"
-                className="mb-4 h-16 w-full px-4 text-sm sm:text-lg font-bold text-white md:w-auto md:px-12"
+                className="mb-4 h-14 sm:h-16 w-full px-3 sm:px-4 text-sm sm:text-base font-bold text-white md:w-auto md:px-12"
                 style={{ backgroundColor: "#CAB272" }}
                 asChild
               >
@@ -45,14 +45,16 @@ export default function VetOftalmologiaPage() {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center"
                 >
-                  <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
-                  <span className="break-words text-center">Agendar consulta imediata no WhatsApp 🐶🐱</span>
+                  <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
+                  <span className="break-words text-center leading-tight">
+                    Agendar consulta imediata no WhatsApp 🐶🐱
+                  </span>
                 </a>
               </Button>
 
-              <div className="flex items-start space-x-3 text-sm">
-                <span className="text-orange-500 text-lg flex-shrink-0 mt-0.5">⚠️</span>
-                <p className="text-orange-600 font-medium leading-relaxed break-words">
+              <div className="flex items-start space-x-2 sm:space-x-3 text-sm">
+                <span className="text-orange-500 text-base sm:text-lg flex-shrink-0 mt-0.5">⚠️</span>
+                <p className="text-orange-600 font-medium leading-relaxed break-words text-sm sm:text-base">
                   Problemas oculares podem evoluir rápido. Agende agora para evitar riscos à visão do seu pet.
                 </p>
               </div>
@@ -60,11 +62,11 @@ export default function VetOftalmologiaPage() {
 
             {/* Image - Right Column (Second on Mobile) */}
             <div className="order-2 md:order-2">
-              <div className="relative overflow-hidden rounded-lg shadow-lg w-full">
+              <div className="relative overflow-hidden rounded-lg shadow-lg w-full mx-auto max-w-md md:max-w-none">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/carol3.jpg-8kaaz7pDUH2cGPH4oPbCq6DpNdhHPN.jpeg"
                   alt="Dra. Carolina Neumann realizando exame oftalmológico em pet com equipamento especializado"
-                  className="h-72 sm:h-80 w-full object-cover md:h-96 lg:h-[500px] max-w-full"
+                  className="h-64 sm:h-72 w-full object-cover md:h-96 lg:h-[500px] max-w-full"
                 />
               </div>
             </div>
