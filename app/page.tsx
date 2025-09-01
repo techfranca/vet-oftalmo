@@ -23,31 +23,36 @@ export default function VetOftalmologiaPage() {
           <div className="grid gap-8 sm:gap-8 md:grid-cols-2 md:items-center">
             {/* Text Content - Left Column (First on Mobile) */}
             <div className="order-1 md:order-1">
-              <h1 className="mb-6 text-2xl sm:text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl text-balance">
+              <h1 className="mb-6 text-2xl sm:text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl text-balance break-words">
                 <span style={{ color: "#CAB272" }}>Olhos vermelhos</span>,{" "}
                 <span style={{ color: "#CAB272" }}>secreção</span> ou seu pet esbarra nos móveis?
               </h1>
 
-              <p className="mb-8 text-lg sm:text-lg text-gray-700 md:text-xl text-pretty leading-relaxed">
+              <p className="mb-8 text-lg sm:text-lg text-gray-700 md:text-xl text-pretty leading-relaxed break-words">
                 Consulta com especialista em Oftalmologia Veterinária. Diagnóstico rápido, tratamento imediato e
                 acompanhamento para salvar a visão do seu melhor amigo.
               </p>
 
               <Button
                 size="lg"
-                className="mb-4 h-16 w-full px-6 text-lg font-bold text-white md:w-auto md:px-12"
+                className="mb-4 h-16 w-full px-4 text-sm sm:text-lg font-bold text-white md:w-auto md:px-12"
                 style={{ backgroundColor: "#CAB272" }}
                 asChild
               >
-                <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-                  <Phone className="mr-3 h-6 w-6" />
-                  <span>Agendar consulta imediata no WhatsApp 🐶🐱</span>
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
+                >
+                  <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
+                  <span className="break-words text-center">Agendar consulta imediata no WhatsApp 🐶🐱</span>
                 </a>
               </Button>
 
               <div className="flex items-start space-x-3 text-sm">
                 <span className="text-orange-500 text-lg flex-shrink-0 mt-0.5">⚠️</span>
-                <p className="text-orange-600 font-medium leading-relaxed">
+                <p className="text-orange-600 font-medium leading-relaxed break-words">
                   Problemas oculares podem evoluir rápido. Agende agora para evitar riscos à visão do seu pet.
                 </p>
               </div>
@@ -55,11 +60,11 @@ export default function VetOftalmologiaPage() {
 
             {/* Image - Right Column (Second on Mobile) */}
             <div className="order-2 md:order-2">
-              <div className="relative overflow-hidden rounded-lg shadow-lg">
+              <div className="relative overflow-hidden rounded-lg shadow-lg w-full">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/carol3.jpg-8kaaz7pDUH2cGPH4oPbCq6DpNdhHPN.jpeg"
                   alt="Dra. Carolina Neumann realizando exame oftalmológico em pet com equipamento especializado"
-                  className="h-72 sm:h-80 w-full object-cover md:h-96 lg:h-[500px]"
+                  className="h-72 sm:h-80 w-full object-cover md:h-96 lg:h-[500px] max-w-full"
                 />
               </div>
             </div>
