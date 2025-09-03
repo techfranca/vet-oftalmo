@@ -28,7 +28,7 @@ export default function VetOftalmologiaPage() {
               </h1>
 
               <p className="mb-6 sm:mb-8 text-base sm:text-lg text-gray-700 md:text-xl text-pretty leading-relaxed break-words">
-                Consulta com especialista em Oftalmologia Veterinária. Diagnóstico rápido, tratamento imediato e
+                Consulta com especializada em Oftalmologia Veterinária. Diagnóstico rápido, tratamento imediato e
                 acompanhamento para salvar a visão do seu melhor amigo.
               </p>
 
@@ -130,7 +130,7 @@ export default function VetOftalmologiaPage() {
             <h2 className="mb-3 sm:mb-4 text-xl sm:text-2xl font-bold text-foreground md:text-3xl">
               Sobre a Dra. Carolina Neumann
             </h2>
-            <p className="text-base sm:text-lg text-muted-foreground">Especialista em Oftalmologia Veterinária</p>
+            <p className="text-base sm:text-lg text-muted-foreground">Especializada em Oftalmologia Veterinária</p>
           </div>
 
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center">
