@@ -466,7 +466,7 @@ export default function VetOftalmologiaPage() {
             {/* Contact Information */}
             <div className="text-gray-800">
               <h3 className="mb-3 sm:mb-4 text-lg sm:text-xl font-bold">Dra. Carolina Neumann</h3>
-              <p className="mb-2 text-sm sm:text-base text-gray-600">Especialista em Oftalmologia Veterinária</p>
+              <p className="mb-2 text-sm sm:text-base text-gray-600">Especializada em Oftalmologia Veterinária</p>
 
               <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
                 <p>📍 Av. das Américas, 7907 - Bloco 2 Loja 119</p>
