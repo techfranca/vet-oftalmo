@@ -109,15 +109,15 @@ export default function VetOftalmologiaPage() {
               <h3 className="mb-2 text-lg sm:text-xl font-bold text-destructive leading-tight">
                 Sem o tratamento correto, esses problemas podem evoluir para dor intensa e até cegueira irreversível.
               </h3>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center mt-3 sm:mt-4 w-full sm:w-auto px-4 py-2 bg-destructive text-destructive-foreground rounded-md font-medium transition-colors hover:bg-destructive/90"
-              >
-                <Phone className="mr-2 h-4 w-4" />
-                Falar no WhatsApp
-              </a>
+<a
+  href={whatsappUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center justify-center mt-3 sm:mt-4 w-full sm:w-auto px-4 py-2 bg-destructive text-white rounded-md font-medium transition-colors hover:bg-destructive/90"
+>
+  Falar no WhatsApp
+</a>
+
             </CardContent>
           </Card>
         </div>
