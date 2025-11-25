@@ -6,8 +6,8 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "cnoftalmovet",
-  description: "Oftalmologia Veterinária",
+  title: "v0 App",
+  description: "Created with v0",
   generator: "v0.app",
 }
 

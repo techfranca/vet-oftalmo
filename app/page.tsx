@@ -2,12 +2,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Eye, Clock, Phone, CheckCircle, AlertTriangle, Droplets, Search } from "lucide-react"
 
-export default function VetOftalmologiaPage() {
+export default function Page() {
   const whatsappNumber = "5521998122301"
-  const whatsappUrl = `https://wa.me/${whatsappNumber}`
+  const whatsappUrl =
+    "https://api.whatsapp.com/send/?phone=5521998122301&text=Sou%20tutor%20do%20meu%20pet%20e%20acho%20que%20ele%20pode%20estar%20com%20um%20problema%20ocular.%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20ele.%20Poderiam%20me%20orientar%20por%20favor%3F&type=phone_number&app_absent=0"
 
   return (
-    <div className="w-full bg-background overflow-x-hidden">
+    <div className="flex min-h-screen flex-col overflow-x-hidden">
       {/* Header with doctor's name */}
       <header className="py-3 sm:py-4" style={{ backgroundColor: "#395757" }}>
         <div className="mx-auto max-w-4xl text-center">
@@ -22,14 +23,15 @@ export default function VetOftalmologiaPage() {
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center px-4">
             {/* Text Content - Left Column (First on Mobile) */}
             <div className="order-1 md:order-1 text-center md:text-left">
-              <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl font-bold leading-tight text-foreground md:text-4xl lg:text-5xl text-balance break-words">
-                <span style={{ color: "#CAB272" }}>Olhos vermelhos</span>,{" "}
-                <span style={{ color: "#CAB272" }}>secreção</span> ou seu pet esbarra nos móveis?
+              <h1 className="mb-4 sm:mb-6 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-gray-900 text-balance break-words">
+                <span style={{ color: "#CAB272" }}>Problemas oculares</span> em pets podem se agravar rapidamente. Não
+                espere os <span style={{ color: "#CAB272" }}>sintomas avançarem</span>.
               </h1>
 
               <p className="mb-6 sm:mb-8 text-base sm:text-lg text-gray-700 md:text-xl text-pretty leading-relaxed break-words">
-                Consulta com especializada em Oftalmologia Veterinária. Diagnóstico rápido, tratamento imediato e
-                acompanhamento para salvar a visão do seu melhor amigo.
+                Agende uma avaliação com a <span style={{ color: "#CAB272" }}>Dra. Carolina Neumann</span>,
+                Médica-Veterinária especializada em <span style={{ color: "#CAB272" }}>Oftalmologia</span>, e garanta o
+                diagnóstico correto antes que a condição evolua.
               </p>
 
               <a
@@ -37,19 +39,25 @@ export default function VetOftalmologiaPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center mb-4 h-14 sm:h-16 w-full px-3 sm:px-4 text-sm sm:text-base font-bold text-white md:w-auto md:px-12 rounded-md transition-colors hover:opacity-90"
-                style={{ backgroundColor: "#CAB272" }}
+                style={{ backgroundColor: "#25D366" }}
               >
                 <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0" />
-                <span className="break-words text-center leading-tight">
-                  Agendar consulta imediata no WhatsApp 🐶
-                </span>
+                <span className="break-words text-center leading-tight">Agendar consulta imediata no WhatsApp 🐶</span>
               </a>
 
-              <div className="flex items-start space-x-2 sm:space-x-3 text-sm justify-center md:justify-start">
-                <span className="text-orange-500 text-base sm:text-lg flex-shrink-0 mt-0.5">⚠️</span>
-                <p className="text-orange-600 font-medium leading-relaxed break-words text-sm sm:text-base">
-                  Problemas oculares podem evoluir rápido. Agende agora para evitar riscos à visão do seu pet.
-                </p>
+              <div className="space-y-2 text-sm sm:text-base justify-center md:justify-start pt-3">
+                <div className="flex items-start space-x-2">
+                  <span className="text-green-600 font-medium flex-shrink-0 mt-0.5">1️⃣</span>
+                  <p className="text-gray-700 leading-relaxed break-words">
+                    Clique no botão abaixo para falar com a nossa equipe de atendimento no WhatsApp.
+                  </p>
+                </div>
+                <div className="flex items-start space-x-2">
+                  <span className="text-green-600 font-medium flex-shrink-0 mt-0.5">2️⃣</span>
+                  <p className="text-gray-700 leading-relaxed break-words">
+                    Agende um horário para a avaliação oftalmológica do seu pet.
+                  </p>
+                </div>
               </div>
             </div>
 
@@ -57,7 +65,7 @@ export default function VetOftalmologiaPage() {
             <div className="order-2 md:order-2 flex justify-center">
               <div className="relative overflow-hidden rounded-lg shadow-lg w-full mx-auto max-w-md md:max-w-none">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/carol3.jpg-8kaaz7pDUH2cGPH4oPbCq6DpNdhHPN.jpeg"
+                  src="/images/carol3.jpeg"
                   alt="Dra. Carolina Neumann realizando exame oftalmológico em pet com equipamento especializado"
                   className="h-64 sm:h-72 w-full object-cover md:h-96 lg:h-[500px] max-w-full"
                 />
@@ -109,15 +117,14 @@ export default function VetOftalmologiaPage() {
               <h3 className="mb-2 text-lg sm:text-xl font-bold text-destructive leading-tight">
                 Sem o tratamento correto, esses problemas podem evoluir para dor intensa e até cegueira irreversível.
               </h3>
-<a
-  href={whatsappUrl}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="inline-flex items-center justify-center mt-3 sm:mt-4 w-full sm:w-auto px-4 py-2 bg-destructive text-white rounded-md font-medium transition-colors hover:bg-destructive/90"
->
-  Falar no WhatsApp
-</a>
-
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center mt-3 sm:mt-4 w-full sm:w-auto px-4 py-2 bg-destructive text-white rounded-md font-medium transition-colors hover:bg-destructive/90"
+              >
+                Falar no WhatsApp
+              </a>
             </CardContent>
           </Card>
         </div>
@@ -136,7 +143,7 @@ export default function VetOftalmologiaPage() {
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center">
             <div className="order-2 md:order-1">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/carol2-1HLUqRYHvdvyNdB9XTCv3lGzNnaFwF.jpeg"
+                src="/images/carol2.jpeg"
                 alt="Dra. Carolina Neumann"
                 className="h-64 sm:h-80 w-full rounded-lg object-cover shadow-lg md:h-96"
               />
@@ -145,26 +152,22 @@ export default function VetOftalmologiaPage() {
             <div className="order-1 md:order-2 space-y-4 sm:space-y-6">
               {[
                 {
-                  iconSrc:
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/xp-FfNnow1nmryuNyQOSjQ5WZJUE8VAYF.png",
+                  iconSrc: "/images/xp.png",
                   title: "+5 anos de experiência",
                   desc: "Especialização exclusiva em oftalmologia veterinária",
                 },
                 {
-                  iconSrc:
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/oftalmo-Jwk5qhwHF3mMbHMYaa6brwEIGKonkP.png",
+                  iconSrc: "/images/oftalmo.png",
                   title: "Foco exclusivo em oftalmologia",
                   desc: "Dedicação total aos cuidados oculares de pets",
                 },
                 {
-                  iconSrc:
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/consultorio-AbGfv3KZ665WNoCZqiWphue8irmMAd.png",
+                  iconSrc: "/images/consultorio.png",
                   title: "Consultório equipado",
                   desc: "Aparelhos modernos para diagnóstico preciso",
                 },
                 {
-                  iconSrc:
-                    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/doutor-BvOiMzdtqpZPfdQo3wyOcnoDmhkkIM.png",
+                  iconSrc: "/images/doutor.png",
                   title: "Atendimento humanizado",
                   desc: "Cuidado individualizado para cada pet",
                 },
@@ -228,7 +231,7 @@ export default function VetOftalmologiaPage() {
 
             <div className="order-2 md:order-2">
               <img
-                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/carol1-qKxMLySfcjgS5AIsCZVwnFAyhixBXg.jpeg"
+                src="/images/carol1.jpeg"
                 alt="Dra. Carolina Neumann examinando os olhos de um pet"
                 className="h-64 sm:h-80 w-full rounded-lg object-cover shadow-lg md:h-96"
               />
@@ -253,7 +256,7 @@ export default function VetOftalmologiaPage() {
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="flex-shrink-0">
                     <img
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/depoimento1-uZHYjLsfQcVTNuRA3GHRyDLFu0l1qp.png"
+                      src="/images/depoimento1.png"
                       alt="Felipe Gandra"
                       className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover"
                     />
@@ -284,7 +287,7 @@ export default function VetOftalmologiaPage() {
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="flex-shrink-0">
                     <img
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/depoimento2-gcqeXdXJVSWbIafRjvrVHUhgpaHdz6.png"
+                      src="/images/depoimento2.png"
                       alt="Bruno Fernandes"
                       className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover"
                     />
@@ -315,7 +318,7 @@ export default function VetOftalmologiaPage() {
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="flex-shrink-0">
                     <img
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/depoimento3-U6CJxMymWD2HIDSPu2zvCsK0kQhnna.png"
+                      src="/images/depoimento3.png"
                       alt="Mariana Oliveira"
                       className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover"
                     />
@@ -346,7 +349,7 @@ export default function VetOftalmologiaPage() {
                 <div className="flex items-start space-x-3 sm:space-x-4">
                   <div className="flex-shrink-0">
                     <img
-                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/depoimento4-RHmM7eZxv0gfOBmLSiLA41mpLPjBDx.png"
+                      src="/images/depoimento4.png"
                       alt="Arleu de Souza"
                       className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover"
                     />
