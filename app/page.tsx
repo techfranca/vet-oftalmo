@@ -5,7 +5,7 @@ import { Eye, Clock, Phone, CheckCircle, AlertTriangle, Droplets, Search } from 
 export default function Page() {
   const whatsappNumber = "5521998122301"
   const whatsappUrl =
-    "https://api.whatsapp.com/send/?phone=5521998122301&text=Sou%20tutor%20do%20meu%20pet%20e%20acho%20que%20ele%20pode%20estar%20com%20um%20problema%20ocular.%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20para%20ele.%20Poderiam%20me%20orientar%20por%20favor%3F&type=phone_number&app_absent=0"
+    "https://api.whatsapp.com/send/?phone=5521998122301&text=Ol%C3%A1%21%20Sou%20o%20tutor%20do%20meu%20pet%20e%20acho%20que%20ele%20pode%20estar%20com%20um%20problema%20ocular.%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%2C%20por%20favor%21&type=phone_number&app_absent=0"
 
   return (
     <div className="flex min-h-screen flex-col overflow-x-hidden">
@@ -49,7 +49,7 @@ export default function Page() {
                 <div className="flex items-start space-x-2">
                   <span className="text-green-600 font-medium flex-shrink-0 mt-0.5">1️⃣</span>
                   <p className="text-gray-700 leading-relaxed break-words">
-                    Clique no botão abaixo para falar com a nossa equipe de atendimento no WhatsApp.
+                    Clique no botão acima para falar com a nossa equipe de atendimento no WhatsApp.
                   </p>
                 </div>
                 <div className="flex items-start space-x-2">
@@ -484,7 +484,7 @@ export default function Page() {
                 className="inline-flex items-center justify-center mt-3 sm:mt-4 text-white w-full sm:w-auto px-4 py-2 rounded-md font-medium transition-colors hover:opacity-90"
                 style={{ backgroundColor: "#CAB272" }}
               >
-                <Phone className="mr-2 h-4 w-4" />
+                <Phone className="mr-2 sm:mr-3 h-4 w-4" />
                 Agendar pelo WhatsApp
               </a>
             </div>
