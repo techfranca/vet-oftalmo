@@ -1,13 +1,12 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { GeistSans } from "geist/font/sans"
-import { GeistMono } from "geist/font/mono"
 import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "v0 App",
-  description: "Created with v0",
+  title: "Dra. Carolina Neumann - Oftalmologia Veterinária",
+  description:
+    "Especialista em Oftalmologia Veterinária no Rio de Janeiro. Diagnóstico e tratamento de problemas oculares em pets.",
   generator: "v0.app",
 }
 
@@ -17,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -31,7 +30,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="font-sans">
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TC3BSV6N"
