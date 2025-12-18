@@ -225,7 +225,7 @@ export default function LandingPage() {
                 style={{ backgroundColor: "#395757" }}
               >
                 <Phone className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
-                Agendar no WhatsApp
+                Agendar agora pelo WhatsApp
               </a>
             </div>
 
@@ -499,7 +499,7 @@ export default function LandingPage() {
                 Agendar pelo WhatsApp
               </a>
 
-              <div className="mt-6 sm:mt-8 h-48 sm:h-56 overflow-hidden rounded-lg shadow-lg">
+              <div className="mt-6 sm:mt-8 h-48 sm:h-56 overflow-hidden rounded-lg shadow-lg max-w-sm">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.0234567890123!2d-43.3654321!3d-23.0123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20das%20Am%C3%A9ricas%2C%207907%20-%20Bloco%202%20Loja%20119%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
                   width="100%"
