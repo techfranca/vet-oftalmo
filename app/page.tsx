@@ -459,52 +459,74 @@ export default function LandingPage() {
             <Phone className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
             Agendar agora pelo WhatsApp
           </a>
+
+          <div className="mt-8 sm:mt-12 h-64 sm:h-80 overflow-hidden rounded-lg shadow-lg">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.0234567890123!2d-43.3654321!3d-23.0123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20das%20Am%C3%A9ricas%2C%207907%20-%20Bloco%202%20Loja%20119%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização da Clínica Dra. Carolina Neumann"
+            />
+          </div>
         </div>
       </section>
 
       {/* Footer */}
       <footer className="py-8 sm:py-12 bg-white">
         <div className="px-4 mx-auto max-w-6xl">
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-2">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center">
             {/* Contact Information */}
             <div className="text-gray-800">
-              <h3 className="mb-3 sm:mb-4 text-lg sm:text-xl font-bold">Dra. Carolina Neumann</h3>
-              <p className="mb-2 text-sm sm:text-base text-gray-600">Especializada em Oftalmologia Veterinária</p>
+              <h3 className="mb-3 sm:mb-4 text-lg sm:text-xl font-bold" style={{ color: "#395757" }}>
+                Dra. Carolina Neumann
+              </h3>
+              <p className="mb-4 text-sm sm:text-base font-medium" style={{ color: "#CAB272" }}>
+                Especializada em Oftalmologia Veterinária
+              </p>
 
-              <div className="space-y-1 sm:space-y-2 text-xs sm:text-sm">
-                <p>📍 Av. das Américas, 7907 - Bloco 2 Loja 119</p>
-                <p>Barra da Tijuca, Rio de Janeiro - RJ</p>
+              <div className="space-y-2 text-xs sm:text-sm text-gray-700 mb-4">
+                <p className="flex items-start">
+                  <span className="mr-2">📍</span>
+                  <span>
+                    Av. das Américas, 7907 - Bloco 2 Loja 119
+                    <br />
+                    Barra da Tijuca, Rio de Janeiro - RJ
+                  </span>
+                </p>
                 <p>📱 WhatsApp: (21) 99812-2301</p>
+                <p>📧 Instagram: @carolinaneumann_oftalmovet</p>
               </div>
 
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center mt-3 sm:mt-4 text-white w-full sm:w-auto px-4 py-2 rounded-md font-medium transition-colors hover:opacity-90"
+                className="inline-flex items-center justify-center mt-2 text-white w-full sm:w-auto px-6 py-3 rounded-md font-semibold transition-all hover:opacity-90 hover:scale-105 shadow-md"
                 style={{ backgroundColor: "#CAB272" }}
               >
-                <Phone className="mr-2 sm:mr-3 h-4 w-4" />
+                <Phone className="mr-2 h-5 w-5" />
                 Agendar pelo WhatsApp
               </a>
             </div>
 
-            {/* Google Maps */}
-            <div className="h-48 sm:h-64 overflow-hidden rounded-lg">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.0234567890123!2d-43.3654321!3d-23.0123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.%20das%20Am%C3%A9ricas%2C%207907%20-%20Bloco%202%20Loja%20119%2C%20Barra%20da%20Tijuca%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localização da Clínica Dra. Carolina Neumann"
+            <div className="overflow-hidden rounded-lg shadow-lg">
+              <img
+                src="/images/coftalmo.png"
+                alt="Clínica Dra. Carolina Neumann - Oftalmologia Veterinária"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
         </div>
       </footer>
+
+      <div className="py-4 text-center text-sm text-white" style={{ backgroundColor: "#395757" }}>
+        <p>Dra. Carolina Neumann</p>
+      </div>
     </div>
   )
 }
