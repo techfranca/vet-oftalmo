@@ -508,12 +508,12 @@ export default function LandingPage() {
                 className="inline-flex items-center justify-center mt-2 text-white w-full sm:w-auto px-6 py-3 rounded-md font-semibold transition-all hover:opacity-90 hover:scale-105 shadow-md"
                 style={{ backgroundColor: "#CAB272" }}
               >
-                <Phone className="mr-2 h-5 w-5" />
+                <Phone className="mr-2 sm:mr-3 h-5 w-5" />
                 Agendar pelo WhatsApp
               </a>
             </div>
 
-            <div className="overflow-hidden rounded-lg shadow-lg">
+            <div className="overflow-hidden rounded-lg shadow-lg max-w-md mx-auto lg:mx-0">
               <img
                 src="/images/coftalmo.png"
                 alt="Clínica Dra. Carolina Neumann - Oftalmologia Veterinária"
