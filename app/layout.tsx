@@ -18,6 +18,15 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
+        <link
+          rel="preload"
+          as="image"
+          href="/images/carol3.jpeg"
+          type="image/jpeg"
+          fetchPriority="high"
+        />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <script
           dangerouslySetInnerHTML={{
             __html: `

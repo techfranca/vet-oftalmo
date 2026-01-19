@@ -70,7 +70,9 @@ export default function LandingPage() {
                   alt="Dra. Carolina Neumann realizando exame oftalmológico em pet com equipamento especializado"
                   fill
                   priority
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  fetchPriority="high"
+                  sizes="(max-width: 768px) 384px, 50vw"
+                  quality={75}
                   className="object-cover"
                 />
               </div>
@@ -178,7 +180,8 @@ export default function LandingPage() {
                 alt="Dra. Carolina Neumann examinando os olhos de um pet"
                 fill
                 loading="lazy"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 100vw, 400px"
+                quality={70}
                 className="object-cover"
               />
             </div>
@@ -203,7 +206,8 @@ export default function LandingPage() {
                 alt="Dra. Carolina Neumann"
                 fill
                 loading="lazy"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                sizes="(max-width: 768px) 100vw, 400px"
+                quality={70}
                 className="object-cover"
               />
             </div>
@@ -579,6 +583,7 @@ export default function LandingPage() {
                 fill
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, 400px"
+                quality={70}
                 className="object-cover"
               />
             </div>
