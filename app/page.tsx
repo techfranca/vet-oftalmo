@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 import { Eye, Clock, Phone, CheckCircle, AlertTriangle, Droplets, Search } from "lucide-react"
+import Image from "next/image"
 
 export default function LandingPage() {
   const whatsappNumber = "5521998122301"
@@ -63,11 +64,14 @@ export default function LandingPage() {
 
             {/* Image - Right Column (Second on Mobile) */}
             <div className="order-2 md:order-2 flex justify-center">
-              <div className="relative overflow-hidden rounded-lg shadow-lg w-full mx-auto max-w-md md:max-w-none">
-                <img
+              <div className="relative overflow-hidden rounded-lg shadow-lg w-full mx-auto max-w-md md:max-w-none h-64 sm:h-72 md:h-96 lg:h-[500px]">
+                <Image
                   src="/images/carol3.jpeg"
                   alt="Dra. Carolina Neumann realizando exame oftalmológico em pet com equipamento especializado"
-                  className="h-64 sm:h-72 w-full object-cover md:h-96 lg:h-[500px] max-w-full"
+                  fill
+                  priority
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -168,11 +172,14 @@ export default function LandingPage() {
               </a>
             </div>
 
-            <div className="order-2 md:order-2">
-              <img
+            <div className="order-2 md:order-2 relative h-64 sm:h-80 md:h-96 w-full rounded-lg overflow-hidden shadow-lg">
+              <Image
                 src="/images/carol1.jpeg"
                 alt="Dra. Carolina Neumann examinando os olhos de um pet"
-                className="h-64 sm:h-80 w-full rounded-lg object-cover shadow-lg md:h-96"
+                fill
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
           </div>
@@ -190,11 +197,14 @@ export default function LandingPage() {
           </div>
 
           <div className="grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center">
-            <div className="order-2 md:order-1">
-              <img
+            <div className="order-2 md:order-1 relative h-64 sm:h-80 md:h-96 w-full rounded-lg overflow-hidden shadow-lg">
+              <Image
                 src="/images/carol2.jpeg"
                 alt="Dra. Carolina Neumann"
-                className="h-64 sm:h-80 w-full rounded-lg object-cover shadow-lg md:h-96"
+                fill
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-cover"
               />
             </div>
 
@@ -263,11 +273,14 @@ export default function LandingPage() {
             <Card className="p-4 sm:p-6">
               <CardContent className="p-0">
                 <div className="flex items-start space-x-3 sm:space-x-4">
-                  <div className="flex-shrink-0">
-                    <img
+                  <div className="flex-shrink-0 relative h-10 w-10 sm:h-12 sm:w-12">
+                    <Image
                       src="/images/depoimento1.png"
                       alt="Felipe Gandra"
-                      className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover"
+                      fill
+                      loading="lazy"
+                      sizes="48px"
+                      className="rounded-full object-cover"
                     />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -294,11 +307,14 @@ export default function LandingPage() {
             <Card className="p-4 sm:p-6">
               <CardContent className="p-0">
                 <div className="flex items-start space-x-3 sm:space-x-4">
-                  <div className="flex-shrink-0">
-                    <img
+                  <div className="flex-shrink-0 relative h-10 w-10 sm:h-12 sm:w-12">
+                    <Image
                       src="/images/depoimento2.png"
                       alt="Bruno Fernandes"
-                      className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover"
+                      fill
+                      loading="lazy"
+                      sizes="48px"
+                      className="rounded-full object-cover"
                     />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -325,11 +341,14 @@ export default function LandingPage() {
             <Card className="p-4 sm:p-6">
               <CardContent className="p-0">
                 <div className="flex items-start space-x-3 sm:space-x-4">
-                  <div className="flex-shrink-0">
-                    <img
+                  <div className="flex-shrink-0 relative h-10 w-10 sm:h-12 sm:w-12">
+                    <Image
                       src="/images/depoimento3.png"
                       alt="Mariana Oliveira"
-                      className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover"
+                      fill
+                      loading="lazy"
+                      sizes="48px"
+                      className="rounded-full object-cover"
                     />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -356,11 +375,14 @@ export default function LandingPage() {
             <Card className="p-4 sm:p-6">
               <CardContent className="p-0">
                 <div className="flex items-start space-x-3 sm:space-x-4">
-                  <div className="flex-shrink-0">
-                    <img
+                  <div className="flex-shrink-0 relative h-10 w-10 sm:h-12 sm:w-12">
+                    <Image
                       src="/images/depoimento4.png"
                       alt="Arleu de Souza"
-                      className="h-10 w-10 sm:h-12 sm:w-12 rounded-full object-cover"
+                      fill
+                      loading="lazy"
+                      sizes="48px"
+                      className="rounded-full object-cover"
                     />
                   </div>
                   <div className="flex-1 min-w-0">
@@ -550,11 +572,14 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-lg shadow-lg max-w-md mx-auto lg:mx-0">
-              <img
+            <div className="relative overflow-hidden rounded-lg shadow-lg max-w-md mx-auto lg:mx-0 h-64 sm:h-80 md:h-96">
+              <Image
                 src="/images/coftalmo.png"
                 alt="Clínica Dra. Carolina Neumann - Oftalmologia Veterinária"
-                className="w-full h-full object-cover"
+                fill
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, 400px"
+                className="object-cover"
               />
             </div>
           </div>
