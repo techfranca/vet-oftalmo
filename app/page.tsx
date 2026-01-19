@@ -130,8 +130,57 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* About the Doctor */}
+      {/* Benefits of the Consultation */}
       <section className="bg-card py-12 sm:py-16">
+        <div className="px-4 mx-auto max-w-4xl">
+          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center">
+            <div className="order-1 md:order-1">
+              <h2 className="mb-4 sm:mb-6 text-xl sm:text-2xl font-bold text-foreground md:text-3xl">
+                O que você terá na consulta:
+              </h2>
+
+              <div className="space-y-3 sm:space-y-4">
+                {[
+                  "Avaliação completa dos olhos do seu pet",
+                  "Diagnóstico rápido e preciso",
+                  "Orientação sobre tratamento imediato",
+                  "Acompanhamento com foco em preservar a visão",
+                ].map((benefit, index) => (
+                  <div key={index} className="flex items-start space-x-3">
+                    <CheckCircle
+                      className="mt-0.5 sm:mt-1 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0"
+                      style={{ color: "#CAB272" }}
+                    />
+                    <p className="text-sm sm:text-base text-foreground leading-relaxed">{benefit}</p>
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center mt-6 sm:mt-8 text-white w-full sm:w-auto px-6 py-3 rounded-md font-medium transition-colors hover:opacity-90"
+                style={{ backgroundColor: "#395757" }}
+              >
+                <Phone className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
+                Agendar agora pelo WhatsApp
+              </a>
+            </div>
+
+            <div className="order-2 md:order-2">
+              <img
+                src="/images/carol1.jpeg"
+                alt="Dra. Carolina Neumann examinando os olhos de um pet"
+                className="h-64 sm:h-80 w-full rounded-lg object-cover shadow-lg md:h-96"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About the Doctor */}
+      <section className="py-12 sm:py-16">
         <div className="px-4 mx-auto max-w-4xl">
           <div className="mb-8 sm:mb-12 text-center">
             <h2 className="mb-3 sm:mb-4 text-xl sm:text-2xl font-bold text-foreground md:text-3xl">
@@ -191,55 +240,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Benefits of the Consultation */}
-      <section className="py-12 sm:py-16">
-        <div className="px-4 mx-auto max-w-4xl">
-          <div className="grid gap-6 sm:gap-8 md:grid-cols-2 md:items-center">
-            <div className="order-1 md:order-1">
-              <h2 className="mb-4 sm:mb-6 text-xl sm:text-2xl font-bold text-foreground md:text-3xl">
-                O que você terá na consulta:
-              </h2>
-
-              <div className="space-y-3 sm:space-y-4">
-                {[
-                  "Avaliação completa dos olhos do seu pet",
-                  "Diagnóstico rápido e preciso",
-                  "Orientação sobre tratamento imediato",
-                  "Acompanhamento com foco em preservar a visão",
-                ].map((benefit, index) => (
-                  <div key={index} className="flex items-start space-x-3">
-                    <CheckCircle
-                      className="mt-0.5 sm:mt-1 h-4 w-4 sm:h-5 sm:w-5 flex-shrink-0"
-                      style={{ color: "#CAB272" }}
-                    />
-                    <p className="text-sm sm:text-base text-foreground leading-relaxed">{benefit}</p>
-                  </div>
-                ))}
-              </div>
-
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center mt-6 sm:mt-8 text-white w-full sm:w-auto px-6 py-3 rounded-md font-medium transition-colors hover:opacity-90"
-                style={{ backgroundColor: "#395757" }}
-              >
-                <Phone className="mr-2 sm:mr-3 h-5 w-5 sm:h-6 sm:w-6" />
-                Agendar agora pelo WhatsApp
-              </a>
-            </div>
-
-            <div className="order-2 md:order-2">
-              <img
-                src="/images/carol1.jpeg"
-                alt="Dra. Carolina Neumann examinando os olhos de um pet"
-                className="h-64 sm:h-80 w-full rounded-lg object-cover shadow-lg md:h-96"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Prova Social - Depoimentos */}
       <section className="bg-card py-12 sm:py-16">
         <div className="px-4 mx-auto max-w-4xl">
@@ -247,6 +247,15 @@ export default function LandingPage() {
             <h2 className="mb-3 sm:mb-4 text-xl sm:text-2xl font-bold text-foreground md:text-3xl">
               O que os tutores dizem
             </h2>
+            <div className="flex items-center justify-center gap-2 mt-2">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="text-yellow-400 text-lg">⭐</span>
+                ))}
+              </div>
+              <span className="text-lg font-bold" style={{ color: "#395757" }}>4.9</span>
+              <span className="text-sm text-muted-foreground">com 121 avaliações no Google</span>
+            </div>
           </div>
 
           <div className="grid gap-4 sm:gap-6 md:grid-cols-2">
@@ -383,37 +392,65 @@ export default function LandingPage() {
         <div className="px-4 mx-auto max-w-3xl">
           <div className="mb-8 sm:mb-12 text-center">
             <h2 className="mb-3 sm:mb-4 text-xl sm:text-2xl font-bold text-foreground md:text-3xl">
-              Perguntas Frequentes
+              Ainda tem dúvidas? Isso é normal.
             </h2>
+            <p className="text-sm sm:text-base text-muted-foreground">
+              Reunimos abaixo as perguntas mais comuns de tutores que chegam até nós preocupados com a visão de seus pets.
+            </p>
           </div>
 
           <Accordion type="single" collapsible className="space-y-3 sm:space-y-4">
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-left text-sm sm:text-base">
-                Preciso de encaminhamento do veterinário?
+                O atendimento oftalmológico dói no pet?
               </AccordionTrigger>
               <AccordionContent className="text-xs sm:text-sm leading-relaxed">
-                Não é necessário encaminhamento. Você pode agendar diretamente pelo WhatsApp. Problemas oculares são
-                urgentes e quanto mais rápido o atendimento, melhor o prognóstico.
+                Não. Os exames são rápidos, indolores e feitos com equipamentos específicos para garantir o máximo conforto do animal.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-2">
               <AccordionTrigger className="text-left text-sm sm:text-base">
-                É urgente mesmo ou posso esperar?
+                Por que levar meu pet direto a um oftalmologista veterinário?
               </AccordionTrigger>
               <AccordionContent className="text-xs sm:text-sm leading-relaxed">
-                Problemas oculares em pets evoluem rapidamente. Vermelhidão, secreção, coceira ou dificuldade para
-                enxergar são sinais que precisam de atenção imediata para evitar complicações graves como perda de
-                visão.
+                O oftalmologista veterinário é especializado em doenças oculares e possui equipamentos e conhecimento específicos para diagnóstico preciso e tratamento adequado.
               </AccordionContent>
             </AccordionItem>
 
             <AccordionItem value="item-3">
-              <AccordionTrigger className="text-left text-sm sm:text-base">Atendem emergências?</AccordionTrigger>
+              <AccordionTrigger className="text-left text-sm sm:text-base">
+                Qual é o valor da consulta oftalmológica veterinária?
+              </AccordionTrigger>
               <AccordionContent className="text-xs sm:text-sm leading-relaxed">
-                Sim! Entre em contato pelo WhatsApp e avaliaremos a urgência do caso. Para emergências oculares graves,
-                priorizamos o atendimento para preservar a visão do seu pet.
+                O valor depende da avaliação clínica e dos exames necessários. Todas as informações são explicadas com transparência antes de qualquer procedimento.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-4">
+              <AccordionTrigger className="text-left text-sm sm:text-base">
+                O tratamento costuma ser longo?
+              </AccordionTrigger>
+              <AccordionContent className="text-xs sm:text-sm leading-relaxed">
+                Depende do diagnóstico. Alguns casos são resolvidos rapidamente, enquanto outros exigem acompanhamento contínuo.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-5">
+              <AccordionTrigger className="text-left text-sm sm:text-base">
+                Atende cães e gatos?
+              </AccordionTrigger>
+              <AccordionContent className="text-xs sm:text-sm leading-relaxed">
+                Sim, a clínica atende cães e gatos de todas as raças e idades.
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="item-6">
+              <AccordionTrigger className="text-left text-sm sm:text-base">
+                Como faço para agendar a consulta?
+              </AccordionTrigger>
+              <AccordionContent className="text-xs sm:text-sm leading-relaxed">
+                Basta clicar no botão de WhatsApp nesta página e falar diretamente com nossa equipe.
               </AccordionContent>
             </AccordionItem>
           </Accordion>
