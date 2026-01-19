@@ -70,7 +70,6 @@ export default function LandingPage() {
                   alt="Dra. Carolina Neumann realizando exame oftalmológico em pet com equipamento especializado"
                   fill
                   priority
-                  fetchPriority="high"
                   sizes="(max-width: 768px) 384px, 50vw"
                   quality={75}
                   className="object-cover"
