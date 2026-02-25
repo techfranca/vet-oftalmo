@@ -5,8 +5,7 @@ import Image from "next/image"
 
 export default function LandingPage() {
   const whatsappNumber = "5521998122301"
-  const whatsappUrl =
-    "https://api.whatsapp.com/send/?phone=5521998122301&text=Ol%C3%A1%21%20Sou%20o%20respons%C3%A1vel%20do%20meu%20pet%20e%20ele%20est%C3%A1%20com%20um%20problema%20oftalmol%C3%B4gico.%20Gostaria%20de%20saber%20mais%20informa%C3%A7%C3%B5es%20sobre%20a%20consulta.&type=phone_number&app_absent=0"
+  const whatsappUrl = "https://wa.link/wgf7sg"
 
   return (
     <div className="flex min-h-screen flex-col overflow-x-hidden">
